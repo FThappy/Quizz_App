@@ -1,0 +1,33 @@
+.main{
+    border-radius: 1rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.content{
+    justify-content: space-between;
+    margin: 1rem;
+}
+.content1 {
+    align-items: center;
+    margin: 1rem;
+}
+.container_item{
+    width: 20rem;
+    height: 20rem;
+}
+@media screen and (max-width :1024px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .container_item {
+            width: 25rem;
+            height: 5rem;
+    }
+}
